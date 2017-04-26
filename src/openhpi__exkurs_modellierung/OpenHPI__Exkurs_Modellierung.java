@@ -34,10 +34,9 @@ public class OpenHPI__Exkurs_Modellierung {
                 rooms.add(livingRoom);
                 rooms.add(kitchen);
 
-                for(Room room : rooms) {
-                    String roomName = (room).getRoom();
+                rooms.stream().map((room) -> (room).getRoom()).forEachOrdered((roomName) -> {
                     System.out.println(roomName);
-                }
+                });
             } else {
                 System.out.println("System bleibt verschlossen, falsche Zutritts-Kennung! Tut mir leid! *grins*");
             }
