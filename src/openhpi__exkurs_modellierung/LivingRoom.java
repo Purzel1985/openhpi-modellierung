@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package openhpi_._exkurs_modellierung;
+package openhpi__exkurs_modellierung;
 
 /**
  *
  * @author christian
  */
-public abstract class HidePlace {
-    
+public class LivingRoom extends Room {
+
+    /**
+     *
+     * @param room
+     */
+    public LivingRoom(String room) {
+        super(room);
+    }
 }

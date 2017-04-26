@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package openhpi_._exkurs_modellierung;
+package openhpi__exkurs_modellierung;
 
 /**
  *
  * @author christian
  */
-public abstract class Security {
-    public int code;
-    
-    public abstract int getCode();
-    
+public abstract class HidePlace {
     
 }
