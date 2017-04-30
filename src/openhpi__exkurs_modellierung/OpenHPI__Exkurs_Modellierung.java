@@ -19,34 +19,6 @@ public class OpenHPI__Exkurs_Modellierung {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int secretCode = new SecretCode().getCode();
-        //System.out.println(secretCode);
-        Scanner scanner = new Scanner(System.in);
-        String secretInputCode;
-        System.out.println("Bitte gib den Zugangscode ein, damit Du mein Versteck betreten kannst:");
-        secretInputCode = scanner.nextLine();
-        if(!secretInputCode.isEmpty() && secretInputCode.matches("[0-9]+")) {
-            if(Integer.parseInt(secretInputCode) == secretCode) {
-                System.out.println("System offen, Du darfst passieren!");
-                Room livingRoom = new Room("LivingRoom");
-                Room kitchen = new Room("Kitchen");
-                ArrayList<Room> rooms = new ArrayList<>();
-                rooms.add(livingRoom);
-                rooms.add(kitchen);
-
-                for(Room room : rooms) {
-                    String roomName = (room).getRoom();
-                    System.out.println(roomName);
-                }
-            } else {
-                System.out.println("System bleibt verschlossen, falsche Zutritts-Kennung! Tut mir leid! *grins*");
-            }
-        } else {
-            System.out.println("FEHLER");
-        }
-        
-        //System.out.println("Ich gehe jetzt in den Raum " + new LivingRoom().getRoom() + "!");
-        //System.out.println("Ich gehe danach in den Raum " + new SleepingRoom().getRoom() + "!");
-        
+        HidingPlace hP = new HidingPlace();        
     }
 }

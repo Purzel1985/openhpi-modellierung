@@ -5,8 +5,6 @@
  */
 package openhpi__exkurs_modellierung;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author christian
@@ -14,8 +12,8 @@ import java.util.ArrayList;
 public class SleepingRoom extends Room {
     private String room = "Sleeping Room";
 
-    public SleepingRoom(String room) {
-        super(room);
+    public SleepingRoom(String room, String output) {
+        super(room, output);
     }
     
     public void setRoom() {
@@ -31,7 +29,7 @@ public class SleepingRoom extends Room {
     /**
      * @param room the room to set
      */
-    public void setRoom(String room) {
+    public void setRoom(String room, String output) {
         this.room = room;
     }
 }

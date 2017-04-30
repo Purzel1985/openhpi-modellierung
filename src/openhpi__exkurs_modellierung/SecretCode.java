@@ -10,7 +10,7 @@ package openhpi__exkurs_modellierung;
  * @author christian
  */
 public class SecretCode extends Security {
-    public int code = 1234567890;
+    private final int code = 1234567890;
     
     @Override
     public int getCode() {

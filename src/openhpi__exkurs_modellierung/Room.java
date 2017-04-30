@@ -12,17 +12,23 @@ import java.util.ArrayList;
  * @author christian
  */
 public class Room {
-    public Room(String room) {
-        setRoom(room);
+    public Room(String room, String output) {
+        setRoom(room, output);
     }
     
     private String room = "";
+    private String output = "";
+    
+    public String getOutput() {
+        return output;
+    }
     
     public String getRoom() {
         return room;
     };
-
-    public void setRoom(String room) {
+    
+    public void setRoom(String room, String output) {
         this.room = room;
+        this.output = output;
     }
 }
