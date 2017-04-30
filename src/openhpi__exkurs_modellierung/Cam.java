@@ -9,18 +9,27 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class Security {
-    private int code;
+public class Cam extends Security {
     private boolean camActive;
     
-    public int getCode() {
-        return code;
+    public Cam() {
+        
     }
     
-    public  boolean getCamActive() {
+    public void test() {
+        if(camActive == true) {
+            System.out.println("Du wirst beobachtet!");
+        } else {
+            System.out.println("x");
+        }
+    }
+    
+    @Override
+    public boolean getCamActive() {
         return camActive;
     }
     
+    @Override
     public void setCamActive(boolean camActive) {
         this.camActive = camActive;
     }

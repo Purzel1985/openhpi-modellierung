@@ -30,5 +30,5 @@ public class Room {
     public void setRoom(String room, String output) {
         this.room = room;
         this.output = output;
-    }
+    }  
 }

@@ -14,6 +14,7 @@ public class LivingRoom extends Room {
     /**
      *
      * @param room
+     * @param output
      */
     public LivingRoom(String room, String output) {
         super(room, output);

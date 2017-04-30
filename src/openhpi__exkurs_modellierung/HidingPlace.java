@@ -15,6 +15,7 @@ import java.util.Scanner;
 public class HidingPlace {
     public HidingPlace() {
         int secretCode = new SecretCode().getCode();
+        
         //System.out.println(secretCode);
         Scanner scanner = new Scanner(System.in);
         String secretInputCode;
@@ -24,8 +25,9 @@ public class HidingPlace {
         if(!secretInputCode.isEmpty() && secretInputCode.matches("[0-9]+")) {
             if(Integer.parseInt(secretInputCode) == secretCode) {
                 System.out.println("System offen, Du darfst passieren!");
-                Room livingRoom = new Room("LivingRoom", "im Wohnzimmer.");
+                Room livingRoom = new Room("LivingRoom", "im Wohnzimmer.") {};
                 Room kitchen = new Room("Kitchen", "in der Küche.");
+                
                 ArrayList<Room> rooms = new ArrayList<>();
                 rooms.add(livingRoom);
                 rooms.add(kitchen);
@@ -36,16 +38,20 @@ public class HidingPlace {
                     System.out.println(rooms.indexOf(room) + " -> " + roomName);
                 }
                 roomInputNumber = scanner.nextLine();
-                System.out.println("EINGABE: " + roomInputNumber);
+                //System.out.println("EINGABE: " + roomInputNumber);
                 System.out.print("Du bist jetzt ");
                 if(roomInputNumber.equals("0")) {
                     System.out.println(livingRoom.getOutput());
-                } else {
+                } else if (roomInputNumber.equals("1")) {
                     System.out.println(kitchen.getOutput());
+                } else {
+                    System.out.println("Diesen Raum gibt es nicht, bitte probiere es noch einmal!");
                 }
-                
             } else {
                 System.out.println("System bleibt verschlossen, falsche Zutritts-Kennung! Tut mir leid! *grins*");
+                Cam cam = new Cam();
+                cam.setCamActive(true);
+                cam.test();
             }
         } else {
             System.out.println("FEHLER");
