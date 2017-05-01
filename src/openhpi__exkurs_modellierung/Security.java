@@ -10,8 +10,19 @@ package openhpi__exkurs_modellierung;
  * @author christian
  */
 public class Security {
+    private boolean securityTest;
     private int code;
     private boolean camActive;
+    private boolean scanModule;
+    private int pacosCode;
+    
+    public boolean getSecurityTest() {
+        return securityTest;
+    }
+    
+    public void setSecurityTest(boolean securityTest) {
+        this.securityTest = securityTest;
+    }
     
     public int getCode() {
         return code;
@@ -23,5 +34,17 @@ public class Security {
     
     public void setCamActive(boolean camActive) {
         this.camActive = camActive;
+    }
+    
+    public boolean getScanModule() {
+        return scanModule;
+    }
+    
+    public void setScanModule(boolean scanModule) {
+        this.scanModule = scanModule;
+    }
+    
+    public int getPacosCode() {
+        return pacosCode;
     }
 }
