@@ -10,5 +10,7 @@ package openhpi__exkurs_modellierung;
  * @author christian
  */
 public class NoEntryDoor extends SecretDoor {
-    
+    public NoEntryDoor(String room, String output) {
+        super(room, output);
+    }
 }
