@@ -9,6 +9,6 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class NoEntryDoor {
+public class NoEntryDoor extends Security {
     
 }
