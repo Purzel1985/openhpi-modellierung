@@ -9,6 +9,14 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class Toilet {
+public class Toilet extends Room {
     
+    /**
+     *
+     * @param room
+     * @param output
+     */
+    public Toilet(String room, String output) {
+        super(room, output);
+    }
 }

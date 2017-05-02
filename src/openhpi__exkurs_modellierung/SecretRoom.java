@@ -9,6 +9,14 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class SecretRoom {
+public class SecretRoom extends Room {
     
+    /**
+     *
+     * @param room
+     * @param output
+     */
+    public SecretRoom(String room, String output) {
+        super(room, output);
+    }
 }

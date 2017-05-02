@@ -11,6 +11,11 @@ package openhpi__exkurs_modellierung;
  */
 public class SleepingRoom extends Room {
 
+    /**
+     *
+     * @param room
+     * @param output
+     */
     public SleepingRoom(String room, String output) {
         super(room, output);
     }

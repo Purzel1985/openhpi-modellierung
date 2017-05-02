@@ -9,6 +9,14 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class Office {
+public class Office extends Room {
     
+    /**
+     *
+     * @param room
+     * @param output
+     */
+    public Office(String room, String output) {
+        super(room, output);
+    }
 }

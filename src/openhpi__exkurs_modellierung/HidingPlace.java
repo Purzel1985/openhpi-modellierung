@@ -14,6 +14,10 @@ import java.util.Scanner;
  */
 public class HidingPlace {
     public HidingPlace() {
+        Security security = new Security();
+        Room rooming = new Room("","");
+        security.room = rooming;
+        
         int secretCode = new SecretCode().getCode();
 //        int pacosSecretCode = new PacosRoom().getPacosCode();
         

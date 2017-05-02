@@ -16,6 +16,8 @@ public class Security {
     private boolean scanModule;
     private int pacosCode;
     
+    public Room room;
+    
     public boolean getSecurityTest() {
         return securityTest;
     }
