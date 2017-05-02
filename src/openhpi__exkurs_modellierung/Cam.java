@@ -20,7 +20,7 @@ public class Cam extends Security {
         if(camActive == true) {
             System.out.println("Du wirst beobachtet!");
         } else {
-            System.out.println("x");
+            System.out.println("");
         }
     }
     

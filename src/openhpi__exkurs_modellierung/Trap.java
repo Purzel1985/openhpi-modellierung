@@ -9,7 +9,7 @@ package openhpi__exkurs_modellierung;
  *
  * @author christian
  */
-public class Trap {
+public class Trap extends PacosRoom {
     public Trap() {
         
     }
